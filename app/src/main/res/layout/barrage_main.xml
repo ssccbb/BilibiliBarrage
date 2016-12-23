@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/barrage_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.sung.demo.bilibilibarrage.BarrageActivity">
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/danmakuView"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAddDanmu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:textSize="14sp"/>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:id="@+id/editAddTextDanmu"
+                    android:background="@null"
+                    android:layout_height="match_parent" />
+            </TableRow>
+        </ScrollView>
+        <Button
+            android:id="@+id/btnAddTextDanmu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_above="@+id/ll"
+        android:text="说明：弹幕浮动区域在屏幕正中200dp高。add默认自动添加一条赞，一条固定评论（带图片）。send添加输入框文字评论。"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
