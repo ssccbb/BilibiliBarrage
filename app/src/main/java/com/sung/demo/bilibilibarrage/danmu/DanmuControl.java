@@ -35,9 +35,6 @@ import master.flame.danmaku.danmaku.model.android.Danmakus;
 import master.flame.danmaku.danmaku.model.android.SpannedCacheStuffer;
 import master.flame.danmaku.danmaku.parser.BaseDanmakuParser;
 
-/**
- * Created by feiyang on 16/3/2.
- */
 public class DanmuControl {
 
     private static final String TAG = "DanmuControl";

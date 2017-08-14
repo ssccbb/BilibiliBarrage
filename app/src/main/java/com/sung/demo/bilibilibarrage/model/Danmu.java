@@ -1,8 +1,5 @@
 package com.sung.demo.bilibilibarrage.model;
 
-/**
- * Created by feiyang on 16/3/2.
- */
 public class Danmu {
     public long   id;
     public int    userId;

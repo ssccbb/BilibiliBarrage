@@ -11,7 +11,6 @@ import java.lang.ref.WeakReference;
 
 /**
  * 图文混排使图片文字基于中线对齐
- * Created by feiyang on 16/2/18.
  * 参考：http://stackoverflow.com/questions/25628258/align-text-around-imagespan-center-vertical
  */
 public class CenteredImageSpan extends ImageSpan {

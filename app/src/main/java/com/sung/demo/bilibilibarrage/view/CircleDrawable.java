@@ -17,7 +17,6 @@ import com.sung.demo.bilibilibarrage.R;
 
 /**
  * 圆形的Drawable
- * Created by feiyang on 16/2/18.
  */
 public class CircleDrawable extends Drawable {
 
